@@ -2,15 +2,14 @@
 ## Softmax
 
 (a) prove that ***softmax*** is invariant to constant offsets in the input,that is, for any input vecotr ***x*** and any constant ***c***,
-$$softmax(x + c) = softmax(x)$$
+
+***softmax(x + c) = softmax(x)***
+
 which ***x+c*** means adding the constant ***c*** to every dimension of ***x***.
 
 First all of,to prove the ***softmax*** function:
+![](softmax.png)
 
-$$softmax(x_i + c) = \frac {e^{x_i + c}}{\sum_j e^{x_i + c}} $$
-$$ = \frac{e^x_i*e^c}{\sum_j e^{x_i}*e^c}$$
-$$ = \frac{e^x_i}{\sum_j e^{x_i}}$$
-$$ = softmax(x_i)$$
 
 
 (b)Write my implementation in ***q1_softmax.py*** and test it.
