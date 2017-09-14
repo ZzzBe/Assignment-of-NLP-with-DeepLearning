@@ -149,3 +149,44 @@ test_softmax()
 
 
 Follow the result i will get the correct answer by doing vectorization.
+Now,We use the implemented softmax function to create the graph to understand the behavior of this function:
+- To create a list which contains values in the range of 0 to 10
+- Next,pass the list to calculate the scores from the softmax function
+- To create a graph.
+
+
+```python
+import matplotlib.pyplot as plt
+
+%matplotlib inline
+def softmax_graph(x, y, x_title, y_title):
+    plt.plot(x, y)
+    plt.xlabel(x_title)
+    plt.ylabel(y_title)
+    plt.show()
+
+
+x = np.arange(0,30)
+y = Jacksoftmax(x)
+print x
+print y
+softmax_graph(x, y, "Input", "Softmax Scores")
+```
+
+    [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+     25 26 27 28 29]
+    [ 0.03152756  0.03152756  0.03152756  0.03152756  0.03152756  0.03152756
+      0.03152756  0.03152756  0.03152756  0.03152756  0.03152756  0.03152756
+      0.03152756  0.03152756  0.03152756  0.03152756  0.03152756  0.03152756
+      0.03152756  0.03152756  0.03152756  0.03152756  0.03152756  0.03152756
+      0.03152756  0.03152756  0.03152756  0.03152756  0.03152756  0.08570079]
+
+
+
+![png](output_9_1.png)
+
+
+The figure shows the property of softmax function:
+*** The high value gets the hign score(means probability).***
+
+We can use the softmax function to multi-classification task.
