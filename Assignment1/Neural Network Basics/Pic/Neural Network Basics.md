@@ -119,7 +119,7 @@ plt.show()
 ```
 
 
-![png](./Pic/output_11_0.png)
+![png](output_11_0.png)
 
 
 From the above graph,we can observe that the sigmoid function produces the curve which will be in shape "S",and returns the output value which falls in the range of 0 to 1.
@@ -143,7 +143,7 @@ plt.show()
 ```
 
 
-![png](./Pic/output_13_0.png)
+![png](output_13_0.png)
 
 
 ### (f) To make debugging easier, we will now implement a gradient checker. Fill in the implementation for gradcheck naive in q2 gradcheck.py. 
