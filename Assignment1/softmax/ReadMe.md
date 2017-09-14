@@ -187,6 +187,6 @@ softmax_graph(x, y, "Input", "Softmax Scores")
 
 
 The figure shows the property of softmax function:
-*** The high value gets the hign score(means probability).***
+***The high value gets the hign score(means probability).***
 
 We can use the softmax function to multi-classification task.
