@@ -151,8 +151,10 @@ plt.show()
 **Gradient checks**
 
 In theory,performing a gradient check is as simple as comparing the analytic gradient and the numerical gradient.We use the *centered* difference formula of the form:
+
 ![](./Pic/gradcheck.png)
-where ***$\epsilon$*** is a very small number,in practice approximately *le-5* or so.
+
+where ϵ is a very small number,in practice approximately *le-5* or so.
 ***Use relative for the comparison.***
 It is always more appropriate to consider the *relative error*.
 
