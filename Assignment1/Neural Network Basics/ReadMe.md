@@ -341,7 +341,7 @@ def forward_backward_prop(data, labels, params, dimensions):
     return cost, grad
 ```
 
-Then generate trial function that are used by multiple tests:
+Then generate trial function that is used by test:
 
 
 ```python
